@@ -2,10 +2,13 @@
   "manifest_version": 3,
   "name": "Fix Google Spell Check",
   "version": "1.0",
-  "description": "In Google's latest update, when you click to correct your spelling, it is not represented in the search bar when you try and copy it. This extension reverts that behaviour.",
+  "description": "Bring back the good old google spell check",
   "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_title": "FPRSL Redirect",
+    "default_title": "Fix Google Spell Check",
     "default_popup": "popup.html"
   },
   "content_scripts": [
