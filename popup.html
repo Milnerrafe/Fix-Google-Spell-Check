@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Fix Google Spell Check</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                min-width: 200px;
+                padding: 12px;
+            }
+            label {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 14px;
+            }
+            input[type="checkbox"] {
+                transform: scale(1.2);
+            }
+            p {
+                margin-top: 10px;
+                font-size: 12px;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <label>
+            <input type="checkbox" id="enabled" />
+            Enable spell check fix
+        </label>
+        <p>
+            To correct spelling automatically, this extension redirects you to
+            the suggested spelling. If the suggestion is incorrect or you prefer
+            to disable this feature, simply uncheck the box and reload.
+        </p>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
